@@ -32,29 +32,43 @@ is more than 1 character in the String. Return 'val' and set the 'value' to the 
 13. Console log value. Create an index.html file, link the this Javascript file. Load in the browser, check the value.
 
 14. Your answer should be a String value that equals 7. Is that what you got?
+
+
+
+
 */
 //Step 1
+
 var value=42
+
 //Step 2
+
 if(value>=53){
    value += 42;
  }else{
    value -= 13;
  }
  //Step 3
+
  value += "11";
  console.log(value);
+
  //Step 4
+
 var arrayA=[]
 for(i=0; i<value.length;i++){
   arrayA[i]=value.charAt(i);
 }
 console.log(arrayA);
+
 //Step 5
+
 arrayA.shift();
 arrayA.pop();
 console.log(arrayA);
+
 //Step 6
+
 var newValue= '';
 for(i=arrayA.length;i>0;i--){
   //console.log("suhhh")
@@ -62,8 +76,59 @@ for(i=arrayA.length;i>0;i--){
 }
 
 console.log(newValue);
+
 //Step 7
+
 value = parseInt(value);
 newValue = parseInt(newValue);
-console.log(typeof(value));
-console.log(typeof(newValue));
+
+console.log(value);
+console.log(newValue);
+
+//Step 8
+
+value = value + newValue;
+
+console.log(value);
+
+//Step 9
+
+if(value < 60){
+	value = 14;
+} else if(value = 2930) {
+	value = 27;
+} else {
+	value = 2;
+}
+
+console.log(value);
+
+//Step 10
+
+i = 10;
+
+while(i > 0){
+	value++;
+	i--;
+}
+
+console.log(value);
+
+//Step 11
+
+var func = function(val){
+	val = val.toString();
+	while(val.charAt(0) === "3"){
+		val = val.substr(1);
+	}
+	//delete.charAt(1);
+	return val;
+}
+
+//Step 12, 13, & 14
+
+value = func(value);
+console.log(value);
+
+
+
