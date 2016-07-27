@@ -121,7 +121,6 @@ var func = function(val){
 	while(val.charAt(0) === "3"){
 		val = val.substr(1);
 	}
-	//delete.charAt(1);
 	return val;
 }
 
